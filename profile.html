@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/app.css">    
+    <script src="./assets/js/app.js" defer></script>
+    <script src="./custom-select.js" defer></script>
+    <script src="./customSelect.js" defer></script>
+    <title>Главная</title>
+  </head>
+  <body>
+    <div class="wrapper profile">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__wrapper">
+            <div class="header__logo">
+              <a href="/" class="header__logo-link">
+                <img
+                  src="./assets/img/logo.png"
+                  alt="logo"
+                  class="header__logo-img"
+                />
+              </a>
+            </div>
+            <div class="header__info">
+              <div class="header__control">
+                <div class="header__choise">
+                  <div class="header__country">
+                    <span class="text">Страна:</span>
+                    <div
+                      id="countrySelect"
+                      class="header__country-select"
+                    ></div>
+                  </div>
+                  <div class="header__lang">
+                    <span class="text">Язык:</span>
+                    <div id="langSelect" class="header__lang-select"></div>
+                  </div>
+                </div>
+                <div class="header__balance">
+                  <span class="text">Валюта:</span>
+                  <div class="header__checkboxes">
+                    <label class="header__check-label">
+                      <input
+                        type="radio"
+                        name="currency"
+                        class="header__checkbox"
+                        checked
+                      />
+                      <span class="check">UZS</span>
+                    </label>
+                    <label class="header__check-label">
+                      <input
+                        type="radio"
+                        name="currency"
+                        class="header__checkbox"
+                      />
+                      <span class="check">USD</span>
+                    </label>
+                  </div>
+                  <div class="header__value">
+                    <span class="value">1000</span>
+                    <span class="currency">USD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main-banner">
+          <div class="main-banner__container">
+            <div class="profile">
+              <div class="profile__title-wrapper">
+                <h2 class="profile__title title">
+                  Мои данные
+                </h2>
+                <button class="profile__change second-btn">Изменить </button>
+              </div>
+              <div class="profile__wrapper">
+                <div class="profile__info">
+                  <div class="profile__avatar">
+                    <img src="https://avtokat.uz/upload/iblock/b39/g5fjzeudba10fjda0l3ltadeh5jotom2/DSC_3915.jpg" alt="Avatar">
+                  </div>
+                  <ul class="profile__list">
+                    <li class="profile__item">
+                      <span class="name">Контактный телефон</span>
+                      <span class="dots">...........................................................................</span>
+                      <span class="value">+998 123 12 12</span>
+                    </li>
+                    <li class="profile__item">
+                      <span class="name">Электронная почта</span>
+                      <span class="dots">...........................................................................</span>
+                      <span class="value">royal_toyota@gmail.com</span>
+                    </li>
+                    <li class="profile__item">
+                      <span class="name">Ник</span>
+                      <span class="dots">...........................................................................</span>
+                      <span class="value">RM_Toyota</span>
+                    </li>
+                    <li class="profile__item">
+                      <span class="name">Имя</span>
+                      <span class="dots">...........................................................................</span>
+                      <span class="value">RM_Motors Toyota</span>
+                    </li>
+                    <li class="profile__item">
+                      <span class="name">Город</span>
+                      <span class="dots">...........................................................................</span>
+                      <span class="value">Ташкент</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="profile__buttons">
+                  <button class="profile__btn second-btn">Избранное</button>
+                  <button class="profile__btn second-btn">Сравнения</button>
+                  <button class="profile__btn second-btn">Сообщения</button>
+                  <button class="profile__btn second-btn">Поиски</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="advert">
+          <div class="advert__container p-x">
+            <h2 class="advert__title title upper">мои объявления</h2>
+            <div class="advert__subtitle subtitle upper">фильтры</div>
+            <div class="advert__filter filter desktop">
+              <div class="filter__radio filter-radio">
+                <label class="filter-radio__label">
+                  <input
+                    name="filter"
+                    type="radio"
+                    class="filter-radio__checkbox"
+                    checked
+                  />
+                  <span class="filter-radio__title">Все</span>
+                </label>
+                <label class="filter-radio__label">
+                  <input
+                    name="filter"
+                    type="radio"
+                    class="filter-radio__checkbox"
+                  />
+                  <span class="filter-radio__title">Новые</span>
+                </label>
+                <label class="filter-radio__label">
+                  <input
+                    name="filter"
+                    type="radio"
+                    class="filter-radio__checkbox"
+                  />
+                  <span class="filter-radio__title">БУ</span>
+                </label>
+              </div>
+              <div class="filter__select filter-select">
+                <button class="filter-select__btn">Марка</button>
+              </div>
+              <div class="filter__select filter-select">
+                <button class="filter-select__btn">Модель</button>
+              </div>
+              <div class="filter__select filter-select">
+                <button class="filter-select__btn">AKHD</button>
+              </div>
+              <div class="filter__range filter-range">
+                <span class="filter-range__title">Цена:</span>
+                <div class="filter-range__wrapper">
+                  <label class="filter-range__label">
+                    <span>от</span>
+                    <input
+                      type="number"
+                      class="filter-range__input"
+                      placeholder="0"
+                    />
+                    <span>$</span>
+                  </label>
+                  <div id="range" class="filter-range__slider"></div>
+                  <label class="filter-range__label">
+                    <span>до</span>
+                    <input
+                      type="number"
+                      class="filter-range__input"
+                      placeholder="99999"
+                    />
+                    <span>$</span>
+                  </label>
+                </div>
+              </div>
+              <div class="filter__select filter-select">
+                <button class="filter-select__btn">Оборудование</button>
+              </div>
+            </div>
+            <div class="advert__filter filter mobile">
+              <div class="filter__radio filter-radio">
+                <label class="filter-radio__label">
+                  <input
+                    name="mobile-filter"
+                    type="radio"
+                    class="filter-radio__checkbox"
+                    checked
+                  />
+                  <span class="filter-radio__title">Все</span>
+                </label>
+                <label class="filter-radio__label">
+                  <input
+                    name="mobile-filter"
+                    type="radio"
+                    class="filter-radio__checkbox"
+                  />
+                  <span class="filter-radio__title">Новые</span>
+                </label>
+                <label class="filter-radio__label">
+                  <input
+                    name="mobile-filter"
+                    type="radio"
+                    class="filter-radio__checkbox"
+                  />
+                  <span class="filter-radio__title">БУ</span>
+                </label>
+              </div>
+              <div class="filter__mobile-wrapper">
+                <div class="filter__select filter-select">
+                  <button class="filter-select__btn">Марка</button>
+                </div>
+              </div>
+              <div class="filter__mobile-wrapper">
+                <div class="filter__select filter-select">
+                  <button class="filter-select__btn">Модель</button>
+                </div>
+              </div>
+              <div class="filter__mobile-wrapper">
+                <div class="filter__select filter-select">
+                  <button class="filter-select__btn">AKHD</button>
+                </div>
+              </div>
+              <div class="filter__mobile-wrapper">
+                <div class="filter__select filter-select">
+                  <button class="filter-select__btn">Оборудование</button>
+                </div>
+              </div>
+              <div class="filter__range filter-range">
+                <span class="filter-range__title">Цена:</span>
+                <div class="filter-range__wrapper">
+                  <label class="filter-range__label">
+                    <span>от</span>
+                    <input
+                      type="number"
+                      class="filter-range__input"
+                      placeholder="0"
+                    />
+                    <span>$</span>
+                  </label>
+                  <div id="range" class="filter-range__slider"></div>
+                  <label class="filter-range__label">
+                    <span>до</span>
+                    <input
+                      type="number"
+                      class="filter-range__input"
+                      placeholder="99999"
+                    />
+                    <span>$</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="advert__filter-selected filter-selected"></div>
+            <div class="advert__filter-result filter-result">
+              <div class="filter-result__title subtitle">
+                Всего: <span class="count">115</span> автомобилей
+              </div>
+              <div class="result-card">
+                <div class="filter-result__wrapper">
+                  <div class="filter-result__card filter-card">
+                    <div data-gallery class="filter-card__image">
+                      <a
+                        class="filter-card__image-link"
+                        href="https://avtokat.uz/upload/resize_cache/iblock/faf/640_480_1/k4esqh0x09mbfjo11sz5qcukxnn5b24o.jpg"
+                      >
+                        <img
+                          src="https://avtokat.uz/upload/resize_cache/iblock/faf/640_480_1/k4esqh0x09mbfjo11sz5qcukxnn5b24o.jpg"
+                          alt="Card Image"
+                        />
+                      </a>
+                      <a
+                        class="filter-card__image-link isHidden"
+                        href="https://avtokat.uz/upload/resize_cache/iblock/faf/640_480_1/k4esqh0x09mbfjo11sz5qcukxnn5b24o.jpg"
+                      >
+                        <img
+                          src="https://avtokat.uz/upload/resize_cache/iblock/faf/640_480_1/k4esqh0x09mbfjo11sz5qcukxnn5b24o.jpg"
+                          alt="Card Image"
+                        />
+                      </a>
+                    </div>
+                    <div class="filter-card__wrapper">
+                      <div class="filter-card__title-wrapper">
+                        <div class="filter-card__title">Mercedes-Benz G-Class 2023 за 145 500 USD
+                        </div>
+                        <div class="filter-card__subtitle">Число идентичных автомобилей: <span class="count">22</span>
+                        </div>
+                      </div>
+                      <div class="filter-card__info-wrapper desktop">
+                        <ul class="filter-card__info">
+                          <li class="filter-card__info-item">
+                            <span class="name">VIN</span>
+                            <span class="dots"
+                              >.............................................</span
+                            >
+                            <span class="value">XUFSK**J2F3***200</span>
+                          </li>
+                          <li class="filter-card__info-item">
+                            <span class="name">Комплектация</span>
+                            <span class="dots"
+                              >.............................................</span
+                            >
+                            <span class="value">LTZ</span>
+                          </li>
+                          <li class="filter-card__info-item">
+                            <span class="name">Двигатель</span>
+                            <span class="dots"
+                              >.............................................</span
+                            >
+                            <span class="value">6,2P 408 AT6 4WD</span>
+                          </li>
+                          <li class="filter-card__info-item">
+                            <span class="name">Цвет</span>
+                            <span class="dots"
+                              >................................................................................................................</span
+                            >
+                            <div class="color">
+                              <span class="value" style="background-color: #D9D9D9;"></span>
+                              <span class="value" style="background-color: #BA2D00;"></span>
+                              <span class="value" style="background-color: #ffffff;"></span>
+                              <span class="value" style="background-color: #BDC04D;"></span>
+                              <span class="value" style="background-color: #101010;"></span>
+                            </div>
+                          </li>
+                          <li class="filter-card__info-item">
+                            <span class="name">Статус</span>
+                            <span class="dots"
+                              >.............................................</span
+                            >
+                            <span class="value">в наличии, в поставке</span>
+                          </li>
+                        </ul>
+                        <ul class="filter-card__equipment">
+                          <li class="filter-card__equipment-item">Литые диски</li>
+                          <li class="filter-card__equipment-item">
+                            Диаметр диска 20"
+                          </li>
+                          <li class="filter-card__equipment-item">
+                            Руль с отделкой кожей
+                          </li>
+                          <li class="filter-card__equipment-item">
+                            Розетка 220V
+                          </li>
+                          <li class="filter-card__equipment-item">
+                            Фронтальная подушка
+                          </li>
+                          <li class="filter-card__equipment-item">
+                            безопасности водителя
+                          </li>
+                          <li class="filter-card__equipment-item">
+                            Фронтальная подушка
+                          </li>
+                          <li class="filter-card__equipment-item">
+                            Литое запасное колесо
+                          </li>
+                          <li class="filter-card__equipment-item">
+                            Аудиосистема премиум
+                          </li>
+                          <li class="filter-card__equipment-item">
+                            Экран (диагональ): 8”
+                          </li>
+                          <li class="filter-card__equipment-item">
+                            Подушки безопасности занавесочного типа
+                          </li>
+                          <li class="filter-card__equipment-item">
+                            Функция Bluetooth
+                          </li>
+                          <li class="filter-card__equipment-item link">
+                            <a href="#">Вся комплектация</a>
+                          </li>
+                        </ul>
+                        <div class="filter-card__details">
+                          <ul class="filter-card__details-info">
+                            <li class="filter-card__details-info-item">
+                              <span class="name">Город:</span>
+                              <span class="value">Ташкент</span>
+                            </li>
+                            <li class="filter-card__details-info-item">
+                              <span class="name">Продавец:</span>
+                              <span class="value">официальный дилер</span>
+                            </li>
+                            <li class="filter-card__details-info-item">
+                              <span class="name">В продаже с 
+                              </span>
+                              <span class="value">26 июля 2023г</span>
+                            </li>
+                          </ul>
+                          <ul class="filter-card__details-list">
+                            <li class="filter-card__details-item">
+                              <span class="name">Просмотров всего</span>
+                              <span class="dots">......................................................</span>
+                              <span class="name">100</span>
+                            </li>
+                            <li class="filter-card__details-item">
+                              <span class="name">Просмотров сегодня</span>
+                              <span class="dots">......................................................</span>
+                              <span class="name">10</span>
+                            </li>
+                            <li class="filter-card__details-item">
+                              <span class="name">В избранном всего</span>
+                              <span class="dots">......................................................</span>
+                              <span class="name">12</span>
+                            </li>
+                            <li class="filter-card__details-item">
+                              <span class="name">В избранном сегодня</span>
+                              <span class="dots">......................................................</span>
+                              <span class="name">1</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-card__info-wrapper mobile">
+                  <ul class="filter-card__info">
+                    <li class="filter-card__info-item">
+                      <span class="name">VIN</span>
+                      <span class="dots"
+                        >.............................................</span
+                      >
+                      <span class="value">XUFSK**J2F3***200</span>
+                    </li>
+                    <li class="filter-card__info-item">
+                      <span class="name">Комплектация</span>
+                      <span class="dots"
+                        >.............................................</span
+                      >
+                      <span class="value">LTZ</span>
+                    </li>
+                    <li class="filter-card__info-item">
+                      <span class="name">Двигатель</span>
+                      <span class="dots"
+                        >.............................................</span
+                      >
+                      <span class="value">6,2P 408 AT6 4WD</span>
+                    </li>
+                    <li class="filter-card__info-item">
+                      <span class="name">Цвет</span>
+                      <span class="dots"
+                        >.............................................</span
+                      >
+                      <div class="color">
+                        <span class="value" style="background-color: #D9D9D9;"></span>
+                        <span class="value" style="background-color: #BA2D00;"></span>
+                        <span class="value" style="background-color: #ffffff;"></span>
+                        <span class="value" style="background-color: #BDC04D;"></span>
+                        <span class="value" style="background-color: #101010;"></span>
+                      </div>
+                    </li>
+                    <li class="filter-card__info-item">
+                      <span class="name">Статус</span>
+                      <span class="dots"
+                        >.............................................</span
+                      >
+                      <span class="value">в наличии, в поставке</span>
+                    </li>
+                  </ul>
+                  <ul class="filter-card__equipment">
+                    <li class="filter-card__equipment-item">Литые диски</li>
+                    <li class="filter-card__equipment-item">
+                      Диаметр диска 20"
+                    </li>
+                    <li class="filter-card__equipment-item">
+                      Руль с отделкой кожей
+                    </li>
+                    <li class="filter-card__equipment-item">
+                      Розетка 220V
+                    </li>
+                    <li class="filter-card__equipment-item">
+                      Фронтальная подушка
+                    </li>
+                    <li class="filter-card__equipment-item">
+                      безопасности водителя
+                    </li>
+                    <li class="filter-card__equipment-item">
+                      Фронтальная подушка
+                    </li>
+                    <li class="filter-card__equipment-item">
+                      Литое запасное колесо
+                    </li>
+                    <li class="filter-card__equipment-item">
+                      Аудиосистема премиум
+                    </li>
+                    <li class="filter-card__equipment-item">
+                      Экран (диагональ): 8”
+                    </li>
+                    <li class="filter-card__equipment-item">
+                      Подушки безопасности занавесочного типа
+                    </li>
+                    <li class="filter-card__equipment-item">
+                      Функция Bluetooth
+                    </li>
+                    <li class="filter-card__equipment-item link">
+                      <a href="#">Вся комплектация</a>
+                    </li>
+                  </ul>
+                  <div class="filter-card__details">
+                    <ul class="filter-card__details-info">
+                      <li class="filter-card__details-info-item">
+                        <span class="name">Город:</span>
+                        <span class="value">Ташкент</span>
+                      </li>
+                      <li class="filter-card__details-info-item">
+                        <span class="name">Продавец:</span>
+                        <span class="value">официальный дилер</span>
+                      </li>
+                      <li class="filter-card__details-info-item">
+                        <span class="name">В продаже с 
+                        </span>
+                        <span class="value">26 июля 2023г</span>
+                      </li>
+                    </ul>
+                    <ul class="filter-card__details-list">
+                      <li class="filter-card__details-item">
+                        <span class="name">Просмотров всего</span>
+                        <span class="dots">......................................................</span>
+                        <span class="name">100</span>
+                      </li>
+                      <li class="filter-card__details-item">
+                        <span class="name">Просмотров сегодня</span>
+                        <span class="dots">......................................................</span>
+                        <span class="name">10</span>
+                      </li>
+                      <li class="filter-card__details-item">
+                        <span class="name">В избранном всего</span>
+                        <span class="dots">......................................................</span>
+                        <span class="name">12</span>
+                      </li>
+                      <li class="filter-card__details-item">
+                        <span class="name">В избранном сегодня</span>
+                        <span class="dots">......................................................</span>
+                        <span class="name">1</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div id="form" class="popup popup-forms">
+      <div class="popup__wrapper">
+        <div class="popup__content">
+          <div class="popup__title-wrapper">
+            <h4 class="popup__title">Оставьте Ваши данные</h4>
+            <button data-close class="popup__close close"></button>
+          </div>
+          <div class="popup__content-wrapper">
+            <form class="popup__form popup-form">
+              <div class="popup-form__input">
+                <input
+                  class="default-input"
+                  type="text"
+                  placeholder="Введите ваше имя"
+                />
+              </div>
+              <div class="popup-form__input">
+                <input
+                  class="default-input"
+                  type="email"
+                  placeholder="Введите ваш e-mail"
+                />
+              </div>
+              <div class="popup-form__input">
+                <input
+                  class="default-input"
+                  type="tel"
+                  placeholder="Введите ваш телефон"
+                />
+              </div>
+              <div id="customSelect" class="custom-select"></div>
+              <div class="popup-form__input">
+                <textarea
+                  class="default-area"
+                  placeholder="Сообщение"
+                ></textarea>
+              </div>
+              <div class="popup-form__buttons">
+                <button class="popup-form__send main-btn">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="video" class="popup popup-video">
+      <div class="popup__wrapper">
+        <div class="popup__content">
+          <div class="popup__title-wrapper">
+            <button data-close class="popup__close close"></button>
+          </div>
+          <div class="popup__content-wrapper">
+            <div data-youtube-place class="popup__video"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

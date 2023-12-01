@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/app.css">    
+    <script src="./assets/js/app.js" defer></script>
+    <script src="./custom-select.js" defer></script>
+    <script src="./customSelect.js" defer></script>
+    <title>Главная</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__wrapper">
+            <div class="header__logo">
+              <a href="/" class="header__logo-link">
+                <img
+                  src="./assets/img/logo.png"
+                  alt="logo"
+                  class="header__logo-img"
+                />
+              </a>
+            </div>
+            <div class="header__info">
+              <div class="header__control">
+                <div class="header__choise">
+                  <div class="header__country">
+                    <span class="text">Страна:</span>
+                    <div
+                      id="countrySelect"
+                      class="header__country-select"
+                    ></div>
+                  </div>
+                  <div class="header__lang">
+                    <span class="text">Язык:</span>
+                    <div id="langSelect" class="header__lang-select"></div>
+                  </div>
+                </div>
+                <div class="header__balance">
+                  <span class="text">Валюта:</span>
+                  <div class="header__checkboxes">
+                    <label class="header__check-label">
+                      <input
+                        type="radio"
+                        name="currency"
+                        class="header__checkbox"
+                        checked
+                      />
+                      <span class="check">UZS</span>
+                    </label>
+                    <label class="header__check-label">
+                      <input
+                        type="radio"
+                        name="currency"
+                        class="header__checkbox"
+                      />
+                      <span class="check">USD</span>
+                    </label>
+                  </div>
+                  <div class="header__value">
+                    <span class="value">1000</span>
+                    <span class="currency">USD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main-banner">
+          <div class="main-banner__container">
+            <div class="profile">
+              <div class="profile__wrapper">
+                <div class="profile__info">
+                  <div class="profile__avatar">
+                    <img src="https://avtokat.uz/upload/iblock/b39/g5fjzeudba10fjda0l3ltadeh5jotom2/DSC_3915.jpg" alt="Avatar">
+                  </div>
+                  <ul class="profile__list">
+                    <li class="profile__item">
+                      <span class="name">Контактный телефон</span>
+                      <span class="dots">...........................................................................</span>
+                      <span class="value">+998 123 12 12</span>
+                    </li>
+                    <li class="profile__item">
+                      <span class="name">Электронная почта</span>
+                      <span class="dots">...........................................................................</span>
+                      <span class="value">royal_toyota@gmail.com</span>
+                    </li>
+                    <li class="profile__item">
+                      <span class="name">Ник</span>
+                      <span class="dots">...........................................................................</span>
+                      <span class="value">RM_Toyota</span>
+                    </li>
+                    <li class="profile__item">
+                      <span class="name">Имя</span>
+                      <span class="dots">...........................................................................</span>
+                      <span class="value">RM_Motors Toyota</span>
+                    </li>
+                    <li class="profile__item">
+                      <span class="name">Город</span>
+                      <span class="dots">...........................................................................</span>
+                      <span class="value">Ташкент</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="profile__buttons">
+                  <button class="profile__btn second-btn">Избранное</button>
+                  <button class="profile__btn second-btn">Сравнения</button>
+                  <button class="profile__btn second-btn">Сообщения</button>
+                  <button class="profile__btn second-btn">Поиски</button>
+                </div>
+              </div>
+            </div>
+            <div class="main-banner__content">
+              <div class="main-banner__title-wrapper">
+                <h1 class="main-banner__title title">
+                  О компании (DealerID: <span id="dealerID">100500</span>)
+                </h1>
+                <button class="main-banner__change second-btn">Изменить</button>
+              </div>
+              <div class="main-banner__slider company-slider">
+                <div class="company-slider__swiper swiper">
+                  <div class="company-slider__wrapper swiper-wrapper">
+                    <div class="company-slider__slide swiper-slide">
+                      <img
+                        src="https://avtokat.uz/upload/resize_cache/iblock/a82/7954zmyehpuih3a386u3jio1zxro9st7/600_600_1/DSC_3910.jpg"
+                        alt="Slider Image"
+                      />
+                    </div>
+                    <div class="company-slider__slide swiper-slide">
+                      <img
+                        src="https://avtokat.uz/upload/resize_cache/iblock/641/wkvrs8qqlvl46ity8yp750bphrpu2k6m/600_600_1/DSC_3913.jpg"
+                        alt="Slider Image"
+                      />
+                    </div>
+                    <div class="company-slider__slide swiper-slide">
+                      <img
+                        src="https://avtokat.uz/upload/resize_cache/iblock/b39/g5fjzeudba10fjda0l3ltadeh5jotom2/600_600_1/DSC_3915.jpg"
+                        alt="Slider Image"
+                      />
+                    </div>
+                    <div class="company-slider__slide swiper-slide">
+                      <img
+                        src="https://avtokat.uz/upload/resize_cache/iblock/e43/wizxpu6dyxixmrvq3n3eqs7pftjnqk93/600_600_1/DSC_3918.jpg"
+                        alt="Slider Image"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="company-slider__controls">
+                  <button class="company-slider__button prev">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="64"
+                      viewBox="0 0 40 64"
+                      fill="none"
+                    >
+                      <path
+                        d="M36.2843 60.2843L8 32L31.9328 8.06715L36.2843 3.71573"
+                        stroke="white"
+                        stroke-width="10"
+                      />
+                    </svg>
+                  </button>
+                  <button class="company-slider__button next">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="64"
+                      viewBox="0 0 40 64"
+                      fill="none"
+                    >
+                      <path
+                        d="M3.71573 60.2843L32 32L8.06715 8.06715L3.71573 3.71573"
+                        stroke="white"
+                        stroke-width="10"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="we-are">
+          <div class="we-are__container p-x">
+            <h2 class="we-are__title title">КАК ДОБРАТЬСЯ</h2>
+            <div class="we-are__wrapper">
+              <div class="we-are__contacts">
+                <div class="we-are__map">
+                  <iframe
+                    src="https://yandex.ru/map-widget/v1/?lang=ru_RU&scroll=false&um=constructor%3Ad11cc58765e0c7ca8d69c477f64936e36fb9a9578ee7e1596cac3c16cc45ea51"
+                    frameborder="0"
+                  ></iframe>
+                </div>
+                <div class="we-are__dealers">
+                  <div class="we-are__dealers-title">
+                    Партнерские дилерские центры
+                  </div>
+                  <div class="we-are__dealers-links">
+                    <a href="#" class="we-are__dealers-link"
+                      ><span>Royal Motors Lexus.</span> В продаже: Lexus</a
+                    >
+                    <a href="#" class="we-are__dealers-link"
+                      ><span>Royal Motors Land Rover.</span> В продаже: Land
+                      Rover</a
+                    >
+                    <a href="#" class="we-are__dealers-link"
+                      ><span>Royal Motors BMW.</span> В продаже: BMW</a
+                    >
+                    <a href="#" class="we-are__dealers-link"
+                      ><span>Royal Motors Premium.</span> В продаже: Lexus,
+                      Porsche, BMW</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="we-are__content">
+                <div class="we-are__social">
+                  <a href="#" class="we-are__link">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="76"
+                      height="73"
+                      viewBox="0 0 76 73"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_52_322)">
+                        <path
+                          d="M58.1875 0H17.8125C7.97493 0 0 7.66013 0 17.1094V55.8906C0 65.3399 7.97493 73 17.8125 73H58.1875C68.0251 73 76 65.3399 76 55.8906V17.1094C76 7.66013 68.0251 0 58.1875 0Z"
+                          fill="url(#paint0_radial_52_322)"
+                        />
+                        <path
+                          d="M58.1875 0H17.8125C7.97493 0 0 7.66013 0 17.1094V55.8906C0 65.3399 7.97493 73 17.8125 73H58.1875C68.0251 73 76 65.3399 76 55.8906V17.1094C76 7.66013 68.0251 0 58.1875 0Z"
+                          fill="url(#paint1_radial_52_322)"
+                        />
+                        <path
+                          d="M37.5027 7.68433C29.491 7.68433 28.4854 7.71805 25.3389 7.85547C22.1983 7.99375 20.0546 8.4712 18.179 9.17193C16.2385 9.89561 14.5927 10.8638 12.9531 12.4393C11.312 14.0144 10.304 15.5952 9.54816 17.4583C8.81656 19.2604 8.31889 21.3204 8.17759 24.3355C8.03687 27.3581 8 28.3243 8 36.0199C8 43.7154 8.0354 44.6783 8.17818 47.7005C8.32273 50.7171 8.8198 52.7762 9.54875 54.5777C10.3028 56.4416 11.3108 58.0225 12.951 59.5973C14.5903 61.1736 16.2361 62.1441 18.1751 62.8678C20.0522 63.5685 22.1963 64.046 25.3363 64.1842C28.483 64.3217 29.4878 64.3554 37.4991 64.3554C45.5116 64.3554 46.514 64.3217 49.6605 64.1842C52.8011 64.046 54.9472 63.5685 56.8243 62.8678C58.7639 62.1441 60.4073 61.1736 62.0464 59.5973C63.6874 58.0225 64.6952 56.4416 65.4512 54.5786C66.1764 52.7762 66.6743 50.7165 66.8218 47.7011C66.9631 44.6788 67 43.7154 67 36.0199C67 28.3243 66.9631 27.3586 66.8218 24.3361C66.6743 21.3195 66.1764 19.2607 65.4512 17.4591C64.6952 15.5952 63.6874 14.0144 62.0464 12.4393C60.4056 10.8633 58.7645 9.89504 56.8225 9.17221C54.9419 8.4712 52.7969 7.99346 49.6564 7.85547C46.5096 7.71805 45.5078 7.68433 37.4935 7.68433H37.5027ZM34.8562 12.7906C35.6418 12.7895 36.5182 12.7906 37.5027 12.7906C45.3794 12.7906 46.3128 12.8178 49.4233 12.9535C52.2996 13.0799 53.8607 13.5415 54.9006 13.9294C56.2773 14.4428 57.2588 15.0569 58.2907 16.0489C59.3232 17.0406 59.9622 17.985 60.4982 19.3074C60.9021 20.3048 61.3832 21.8043 61.5142 24.567C61.6555 27.5541 61.6862 28.4512 61.6862 36.0133C61.6862 43.5754 61.6555 44.4728 61.5142 47.4596C61.3826 50.2223 60.9021 51.7218 60.4982 52.7195C59.9637 54.0419 59.3232 54.9835 58.2907 55.9747C57.2582 56.9664 56.2779 57.5801 54.9006 58.0939C53.8619 58.4835 52.2996 58.9439 49.4233 59.0703C46.3134 59.206 45.3794 59.2355 37.5027 59.2355C29.6256 59.2355 28.6919 59.206 25.5823 59.0703C22.706 58.9428 21.1449 58.4812 20.1041 58.0933C18.7277 57.5796 17.7441 56.9658 16.7116 55.9741C15.6791 54.9824 15.0402 54.0402 14.5042 52.7172C14.1003 51.7196 13.6192 50.2201 13.4882 47.4574C13.3469 44.4703 13.3186 43.5732 13.3186 36.0063C13.3186 28.4396 13.3469 27.547 13.4882 24.5599C13.6197 21.7973 14.1003 20.2978 14.5042 19.2989C15.039 17.9765 15.6791 17.0321 16.7119 16.0404C17.7444 15.0487 18.7277 14.4346 20.1044 13.9201C21.1443 13.5305 22.706 13.07 25.5823 12.9431C28.3037 12.8249 29.3583 12.7895 34.8562 12.7835V12.7906ZM53.2498 17.4954C51.2954 17.4954 49.7098 19.017 49.7098 20.8945C49.7098 22.7717 51.2954 24.2947 53.2498 24.2947C55.2041 24.2947 56.7898 22.7717 56.7898 20.8945C56.7898 19.0173 55.2041 17.4943 53.2498 17.4943V17.4954ZM37.5027 21.4683C29.1365 21.4683 22.3532 27.9837 22.3532 36.0199C22.3532 44.056 29.1365 50.5683 37.5027 50.5683C45.8691 50.5683 52.65 44.056 52.65 36.0199C52.65 27.984 45.8686 21.4683 37.5021 21.4683H37.5027ZM37.5027 26.5746C42.9333 26.5746 47.3362 30.8031 47.3362 36.0199C47.3362 41.2361 42.9333 45.4651 37.5027 45.4651C32.0717 45.4651 27.6694 41.2361 27.6694 36.0199C27.6694 30.8031 32.0717 26.5746 37.5027 26.5746Z"
+                          fill="white"
+                        />
+                      </g>
+                      <defs>
+                        <radialGradient
+                          id="paint0_radial_52_322"
+                          cx="0"
+                          cy="0"
+                          r="1"
+                          gradientUnits="userSpaceOnUse"
+                          gradientTransform="translate(20.1875 78.6224) rotate(-90) scale(72.3484 70.0551)"
+                        >
+                          <stop stop-color="#FFDD55" />
+                          <stop offset="0.1" stop-color="#FFDD55" />
+                          <stop offset="0.5" stop-color="#FF543E" />
+                          <stop offset="1" stop-color="#C837AB" />
+                        </radialGradient>
+                        <radialGradient
+                          id="paint1_radial_52_322"
+                          cx="0"
+                          cy="0"
+                          r="1"
+                          gradientUnits="userSpaceOnUse"
+                          gradientTransform="translate(-12.7303 5.25857) rotate(78.2286) scale(32.3923 138.562)"
+                        >
+                          <stop stop-color="#3771C8" />
+                          <stop offset="0.128" stop-color="#3771C8" />
+                          <stop
+                            offset="1"
+                            stop-color="#6600FF"
+                            stop-opacity="0"
+                          />
+                        </radialGradient>
+                        <clipPath id="clip0_52_322">
+                          <rect width="76" height="73" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                  <a href="#" class="we-are__link">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="83"
+                      height="78"
+                      viewBox="0 0 83 78"
+                      fill="none"
+                    >
+                      <path
+                        d="M75.7515 2.81934H7.2485C4.90212 2.81934 3 4.60687 3 6.8119V71.1882C3 73.3932 4.90212 75.1808 7.2485 75.1808H75.7515C78.0979 75.1808 80 73.3932 80 71.1882V6.8119C80 4.60687 78.0979 2.81934 75.7515 2.81934Z"
+                        fill="#3D5A98"
+                      />
+                      <path
+                        d="M56.0671 75.1808V47.3173H66.0905L67.5894 36.4588H56.0671V29.5279C56.0671 26.3847 57.0056 24.2385 61.8348 24.2385H68V14.5109C65.0146 14.2207 62.0144 14.0827 59.0128 14.0975C50.1365 14.0975 44.0234 19.1437 44.0234 28.4518V36.4588H34V47.3173H44.0234V75.1808H56.0671Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="we-are__link">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="75"
+                      height="75"
+                      viewBox="0 0 75 75"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_52_317)">
+                        <path
+                          d="M37.5 0.9375C17.301 0.9375 0.9375 17.3033 0.9375 37.5C0.9375 57.6967 17.3033 74.0625 37.5 74.0625C57.699 74.0625 74.0625 57.6967 74.0625 37.5C74.0625 17.3033 57.6967 0.9375 37.5 0.9375ZM55.4581 25.9864L49.4571 54.2645C49.0136 56.2695 47.8201 56.7555 46.1547 55.8119L37.0141 49.075L32.6053 53.3209C32.1194 53.8069 31.7066 54.2197 30.7631 54.2197L31.4118 44.9163L48.3508 29.6119C49.0891 28.9632 48.188 28.5953 47.2138 29.244L26.2789 42.423L17.2562 39.6065C15.2959 38.9884 15.2511 37.6462 17.669 36.7027L52.9199 23.1085C54.557 22.5188 55.9865 23.5072 55.4557 25.984L55.4581 25.9864Z"
+                          fill="#25A3DB"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_52_317">
+                          <rect width="75" height="75" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                  <a href="#" class="we-are__link ">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="78"
+                      height="73"
+                      viewBox="0 0 78 73"
+                      fill="none"
+                    >
+                      <path
+                        d="M72.8919 0.438721H5.10811C4.01857 0.438721 2.97366 0.849455 2.20324 1.58057C1.43282 2.31168 1 3.30328 1 4.33723V68.6627C1 69.6966 1.43282 70.6882 2.20324 71.4193C2.97366 72.1504 4.01857 72.5612 5.10811 72.5612H72.8919C73.9814 72.5612 75.0263 72.1504 75.7968 71.4193C76.5672 70.6882 77 69.6966 77 68.6627V4.33723C77 3.30328 76.5672 2.31168 75.7968 1.58057C75.0263 0.849455 73.9814 0.438721 72.8919 0.438721Z"
+                        fill="#29A348"
+                      />
+                      <path
+                        d="M42.2413 60.7113C42.1591 51.385 44.4248 43.6789 56.7881 44.1619C74.4242 1.54971 2.51178 3.17389 21.6802 43.9087C27.4932 43.566 37.1288 46.8474 35.4835 61.7201M77 55.5253L1 66.8672ZM1 11.8264L26.3573 16.2861ZM56.1616 20.5705L77 23.4546Z"
+                        fill="#3C6DB4"
+                      />
+                      <path
+                        d="M42.2413 60.7113C42.1591 51.385 44.4248 43.6789 56.7881 44.1619C74.4242 1.54971 2.51178 3.17389 21.6802 43.9087C27.4932 43.566 37.1288 46.8474 35.4835 61.7201M77 55.5253L1 66.8672M1 11.8264L26.3573 16.2861M56.1616 20.5705L77 23.4546"
+                        stroke="white"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="we-are__link">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="63"
+                      height="74"
+                      viewBox="0 0 63 74"
+                      fill="none"
+                    >
+                      <path
+                        d="M31.5064 0.69873C14.5914 0.69873 0.879883 13.8255 0.879883 30.0192C0.879883 38.1131 4.30546 45.4418 9.84579 50.7473C15.3877 56.0558 28.4437 63.7378 29.2094 71.8009C29.3242 73.0099 30.2385 73.9999 31.5064 73.9999C32.7743 73.9999 33.6886 73.0099 33.8034 71.8009C34.569 63.7378 47.6251 56.0558 53.167 50.7473C58.7073 45.4418 62.1329 38.1131 62.1329 30.0192C62.1329 13.8255 48.4214 0.69873 31.5064 0.69873Z"
+                        fill="#FF4433"
+                      />
+                      <path
+                        d="M32.4945 40.1686C38.4965 40.1686 43.3619 35.5404 43.3619 29.8312C43.3619 24.1221 38.4965 19.4939 32.4945 19.4939C26.4925 19.4939 21.627 24.1221 21.627 29.8312C21.627 35.5404 26.4925 40.1686 32.4945 40.1686Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#" class="we-are__link gl">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="56"
+                      height="77"
+                      viewBox="0 0 56 77"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_52_305)">
+                        <path
+                          d="M15 56.9955C17.3471 59.8427 19.4832 62.8418 21.393 65.9712C23.0236 68.9143 23.7033 70.9099 24.895 74.456C25.6258 76.4153 26.2863 77 27.7064 77C29.2538 77 29.9559 76.0052 30.4983 74.4668C31.6248 71.1179 32.5086 68.5621 33.903 66.1472C36.6392 61.4849 40.0393 57.3418 43.3801 53.36C44.2845 52.233 50.132 45.6676 52.7645 40.4873C52.7645 40.4873 56 34.7967 56 26.8493C56 19.4152 52.8091 14.2593 52.8091 14.2593L43.6224 16.6012L38.0434 30.5884L36.6631 32.5171L36.3872 32.8665L36.0201 33.3039L35.3757 34.0025L34.455 34.8788L29.4869 38.7316L17.0662 45.5582L15 56.9955Z"
+                          fill="#34A853"
+                        />
+                        <path
+                          d="M3 39.49C5.95622 46.1103 11.6569 51.9299 15.5139 57.037L36 33.2448C36 33.2448 33.1139 36.9456 27.8785 36.9456C22.0469 36.9456 17.3358 32.3799 17.3358 26.6229C17.3358 22.675 19.7583 19.9629 19.7583 19.9629L5.85185 23.6163L3 39.49Z"
+                          fill="#FBBC04"
+                        />
+                        <path
+                          d="M36.6582 0.950894C43.5429 3.0929 49.4357 7.58977 53 14.2209L36.433 33.2717C36.433 33.2717 38.8843 30.5218 38.8843 26.6145C38.8843 20.7475 33.7646 16.3645 28.2339 16.3645C23.0038 16.3645 20 20.044 20 20.044V8.04226L36.6582 0.950684V0.950894Z"
+                          fill="#4285F4"
+                        />
+                        <path
+                          d="M7 9.46584C11.1384 4.80231 18.4204 0 28.4597 0C33.3305 0 37 1.2044 37 1.2044L20.2365 19.963H8.35933L7 9.46584Z"
+                          fill="#1A73E8"
+                        />
+                        <path
+                          d="M2.79234 39.9259C2.79234 39.9259 0 34.6766 0 27.0721C0 19.8847 2.91056 13.6021 6.64541 9.5061L20 20.2943L2.79234 39.9259Z"
+                          fill="#EA4335"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_52_305">
+                          <rect width="56" height="77" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="advert">
+          <div class="advert__container p-x">
+            <h2 class="advert__title title upper">мои объявления</h2>
+            <div class="advert__subtitle subtitle upper">фильтры</div>
+            <div class="advert__filter filter desktop">
+              <div class="filter__radio filter-radio">
+                <label class="filter-radio__label">
+                  <input
+                    name="filter"
+                    type="radio"
+                    class="filter-radio__checkbox"
+                    checked
+                  />
+                  <span class="filter-radio__title">Все</span>
+                </label>
+                <label class="filter-radio__label">
+                  <input
+                    name="filter"
+                    type="radio"
+                    class="filter-radio__checkbox"
+                  />
+                  <span class="filter-radio__title">Новые</span>
+                </label>
+                <label class="filter-radio__label">
+                  <input
+                    name="filter"
+                    type="radio"
+                    class="filter-radio__checkbox"
+                  />
+                  <span class="filter-radio__title">БУ</span>
+                </label>
+              </div>
+              <div class="filter__select filter-select">
+                <button class="filter-select__btn">Марка</button>
+              </div>
+              <div class="filter__select filter-select">
+                <button class="filter-select__btn">Модель</button>
+              </div>
+              <div class="filter__select filter-select">
+                <button class="filter-select__btn">AKHD</button>
+              </div>
+              <div class="filter__range filter-range">
+                <span class="filter-range__title">Цена:</span>
+                <div class="filter-range__wrapper">
+                  <label class="filter-range__label">
+                    <span>от</span>
+                    <input
+                      type="number"
+                      class="filter-range__input"
+                      placeholder="0"
+                    />
+                    <span>$</span>
+                  </label>
+                  <div id="range" class="filter-range__slider"></div>
+                  <label class="filter-range__label">
+                    <span>до</span>
+                    <input
+                      type="number"
+                      class="filter-range__input"
+                      placeholder="99999"
+                    />
+                    <span>$</span>
+                  </label>
+                </div>
+              </div>
+              <div class="filter__select filter-select">
+                <button class="filter-select__btn">Оборудование</button>
+              </div>
+            </div>
+            <div class="advert__filter filter mobile">
+              <div class="filter__radio filter-radio">
+                <label class="filter-radio__label">
+                  <input
+                    name="mobile-filter"
+                    type="radio"
+                    class="filter-radio__checkbox"
+                    checked
+                  />
+                  <span class="filter-radio__title">Все</span>
+                </label>
+                <label class="filter-radio__label">
+                  <input
+                    name="mobile-filter"
+                    type="radio"
+                    class="filter-radio__checkbox"
+                  />
+                  <span class="filter-radio__title">Новые</span>
+                </label>
+                <label class="filter-radio__label">
+                  <input
+                    name="mobile-filter"
+                    type="radio"
+                    class="filter-radio__checkbox"
+                  />
+                  <span class="filter-radio__title">БУ</span>
+                </label>
+              </div>
+              <div class="filter__mobile-wrapper">
+                <div class="filter__select filter-select">
+                  <button class="filter-select__btn">Марка</button>
+                </div>
+              </div>
+              <div class="filter__mobile-wrapper">
+                <div class="filter__select filter-select">
+                  <button class="filter-select__btn">Модель</button>
+                </div>
+              </div>
+              <div class="filter__mobile-wrapper">
+                <div class="filter__select filter-select">
+                  <button class="filter-select__btn">AKHD</button>
+                </div>
+              </div>
+              <div class="filter__mobile-wrapper">
+                <div class="filter__select filter-select">
+                  <button class="filter-select__btn">Оборудование</button>
+                </div>
+              </div>
+              <div class="filter__range filter-range">
+                <span class="filter-range__title">Цена:</span>
+                <div class="filter-range__wrapper">
+                  <label class="filter-range__label">
+                    <span>от</span>
+                    <input
+                      type="number"
+                      class="filter-range__input"
+                      placeholder="0"
+                    />
+                    <span>$</span>
+                  </label>
+                  <div id="range" class="filter-range__slider"></div>
+                  <label class="filter-range__label">
+                    <span>до</span>
+                    <input
+                      type="number"
+                      class="filter-range__input"
+                      placeholder="99999"
+                    />
+                    <span>$</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="advert__filter-selected filter-selected"></div>
+            <div class="advert__filter-result filter-result">
+              <div class="filter-result__title subtitle">
+                Всего: <span class="count">115</span> автомобилей
+              </div>
+              <div class="filter-result__slider filter-result-slider por">
+                <div class="filter-result-slider__swiper swiper">
+                  <div class="filter-result-slider__wrapper swiper-wrapper">
+                    <div
+                      data-gallery
+                      class="filter-result-slider__slide swiper-slide"
+                    >
+                      <a
+                        href="https://avtokat.uz/upload/resize_cache/iblock/faf/640_480_1/k4esqh0x09mbfjo11sz5qcukxnn5b24o.jpg"
+                        class="filter-result-slider__card card"
+                      >
+                        <div class="card__image">
+                          <img
+                            src="https://avtokat.uz/upload/resize_cache/iblock/faf/640_480_1/k4esqh0x09mbfjo11sz5qcukxnn5b24o.jpg"
+                            alt="Slider Img"
+                          />
+                        </div>
+                        <div class="card__info">Chevrolet Tahoe: 2</div>
+                      </a>
+                      <a
+                        href="https://avtokat.uz/upload/resize_cache/iblock/faf/640_480_1/k4esqh0x09mbfjo11sz5qcukxnn5b24o.jpg"
+                        class="filter-result-slider__card card isHidden"
+                      >
+                        <div class="card__info">Chevrolet Tahoe: 2</div>
+                      </a>
+                    </div>
+                    <div
+                      data-gallery
+                      class="filter-result-slider__slide swiper-slide"
+                    >
+                      <a
+                        href="https://avtokat.uz/upload/resize_cache/iblock/90f/f57kzkipk48vvvjz02l0xgu43x1jmvr1/640_480_1/DSC_3910.jpg"
+                        class="filter-result-slider__card card"
+                      >
+                        <div class="card__image">
+                          <img
+                            src="https://avtokat.uz/upload/resize_cache/iblock/90f/f57kzkipk48vvvjz02l0xgu43x1jmvr1/640_480_1/DSC_3910.jpg"
+                            alt="Slider Img"
+                          />
+                        </div>
+                        <div class="card__info">Chevrolet Tahoe: 2</div>
+                      </a>
+                      <a
+                        href="https://avtokat.uz/upload/resize_cache/iblock/90f/f57kzkipk48vvvjz02l0xgu43x1jmvr1/640_480_1/DSC_3910.jpg"
+                        class="filter-result-slider__card card isHidden"
+                      >
+                        <div class="card__image">
+                          <img
+                            src="https://avtokat.uz/upload/resize_cache/iblock/90f/f57kzkipk48vvvjz02l0xgu43x1jmvr1/640_480_1/DSC_3910.jpg"
+                            alt="Slider Img"
+                          />
+                        </div>
+                        <div class="card__info">Chevrolet Tahoe: 2</div>
+                      </a>
+                    </div>
+                    <div
+                      data-gallery
+                      class="filter-result-slider__slide swiper-slide"
+                    >
+                      <a
+                        href="https://avtokat.uz/upload/resize_cache/iblock/faf/640_480_1/k4esqh0x09mbfjo11sz5qcukxnn5b24o.jpg"
+                        class="filter-result-slider__card card"
+                      >
+                        <div class="card__image">
+                          <img
+                            src="https://avtokat.uz/upload/resize_cache/iblock/faf/640_480_1/k4esqh0x09mbfjo11sz5qcukxnn5b24o.jpg"
+                            alt="Slider Img"
+                          />
+                        </div>
+                        <div class="card__info">Chevrolet Tahoe: 2</div>
+                      </a>
+                      <a
+                        href="https://avtokat.uz/upload/resize_cache/iblock/faf/640_480_1/k4esqh0x09mbfjo11sz5qcukxnn5b24o.jpg"
+                        class="filter-result-slider__card card isHidden"
+                      >
+                        <div class="card__info">Chevrolet Tahoe: 2</div>
+                      </a>
+                    </div>
+                    <div
+                      data-gallery
+                      class="filter-result-slider__slide swiper-slide"
+                    >
+                      <a
+                        href="https://avtokat.uz/upload/resize_cache/iblock/90f/f57kzkipk48vvvjz02l0xgu43x1jmvr1/640_480_1/DSC_3910.jpg"
+                        class="filter-result-slider__card card"
+                      >
+                        <div class="card__image">
+                          <img
+                            src="https://avtokat.uz/upload/resize_cache/iblock/90f/f57kzkipk48vvvjz02l0xgu43x1jmvr1/640_480_1/DSC_3910.jpg"
+                            alt="Slider Img"
+                          />
+                        </div>
+                        <div class="card__info">Chevrolet Tahoe: 2</div>
+                      </a>
+                      <a
+                        href="https://avtokat.uz/upload/resize_cache/iblock/90f/f57kzkipk48vvvjz02l0xgu43x1jmvr1/640_480_1/DSC_3910.jpg"
+                        class="filter-result-slider__card card isHidden"
+                      >
+                        <div class="card__image">
+                          <img
+                            src="https://avtokat.uz/upload/resize_cache/iblock/90f/f57kzkipk48vvvjz02l0xgu43x1jmvr1/640_480_1/DSC_3910.jpg"
+                            alt="Slider Img"
+                          />
+                        </div>
+                        <div class="card__info">Chevrolet Tahoe: 2</div>
+                      </a>
+                    </div>
+                    <div
+                      data-gallery
+                      class="filter-result-slider__slide swiper-slide"
+                    >
+                      <a
+                        href="https://avtokat.uz/upload/resize_cache/iblock/faf/640_480_1/k4esqh0x09mbfjo11sz5qcukxnn5b24o.jpg"
+                        class="filter-result-slider__card card"
+                      >
+                        <div class="card__image">
+                          <img
+                            src="https://avtokat.uz/upload/resize_cache/iblock/faf/640_480_1/k4esqh0x09mbfjo11sz5qcukxnn5b24o.jpg"
+                            alt="Slider Img"
+                          />
+                        </div>
+                        <div class="card__info">Chevrolet Tahoe: 2</div>
+                      </a>
+                      <a
+                        href="https://avtokat.uz/upload/resize_cache/iblock/faf/640_480_1/k4esqh0x09mbfjo11sz5qcukxnn5b24o.jpg"
+                        class="filter-result-slider__card card isHidden"
+                      >
+                        <div class="card__info">Chevrolet Tahoe: 2</div>
+                      </a>
+                    </div>
+                    <div
+                      data-gallery
+                      class="filter-result-slider__slide swiper-slide"
+                    >
+                      <a
+                        href="https://avtokat.uz/upload/resize_cache/iblock/90f/f57kzkipk48vvvjz02l0xgu43x1jmvr1/640_480_1/DSC_3910.jpg"
+                        class="filter-result-slider__card card"
+                      >
+                        <div class="card__image">
+                          <img
+                            src="https://avtokat.uz/upload/resize_cache/iblock/90f/f57kzkipk48vvvjz02l0xgu43x1jmvr1/640_480_1/DSC_3910.jpg"
+                            alt="Slider Img"
+                          />
+                        </div>
+                        <div class="card__info">Chevrolet Tahoe: 2</div>
+                      </a>
+                      <a
+                        href="https://avtokat.uz/upload/resize_cache/iblock/90f/f57kzkipk48vvvjz02l0xgu43x1jmvr1/640_480_1/DSC_3910.jpg"
+                        class="filter-result-slider__card card isHidden"
+                      >
+                        <div class="card__image">
+                          <img
+                            src="https://avtokat.uz/upload/resize_cache/iblock/90f/f57kzkipk48vvvjz02l0xgu43x1jmvr1/640_480_1/DSC_3910.jpg"
+                            alt="Slider Img"
+                          />
+                        </div>
+                        <div class="card__info">Chevrolet Tahoe: 2</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter-result-slider__controls">
+                  <button class="filter-result-slider__button prev">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="64"
+                      viewBox="0 0 40 64"
+                      fill="none"
+                    >
+                      <path
+                        d="M36.2843 60.2843L8 32L31.9328 8.06715L36.2843 3.71573"
+                        stroke="white"
+                        stroke-width="10"
+                      />
+                    </svg>
+                  </button>
+                  <button class="filter-result-slider__button next">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="64"
+                      viewBox="0 0 40 64"
+                      fill="none"
+                    >
+                      <path
+                        d="M3.71573 60.2843L32 32L8.06715 8.06715L3.71573 3.71573"
+                        stroke="white"
+                        stroke-width="10"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="filter-result__wrapper">
+                <div class="filter-result__card filter-card">
+                  <div data-gallery class="filter-card__image">
+                    <a
+                      class="filter-card__image-link"
+                      href="https://avtokat.uz/upload/resize_cache/iblock/faf/640_480_1/k4esqh0x09mbfjo11sz5qcukxnn5b24o.jpg"
+                    >
+                      <img
+                        src="https://avtokat.uz/upload/resize_cache/iblock/faf/640_480_1/k4esqh0x09mbfjo11sz5qcukxnn5b24o.jpg"
+                        alt="Card Image"
+                      />
+                    </a>
+                    <a
+                      class="filter-card__image-link isHidden"
+                      href="https://avtokat.uz/upload/resize_cache/iblock/faf/640_480_1/k4esqh0x09mbfjo11sz5qcukxnn5b24o.jpg"
+                    >
+                      <img
+                        src="https://avtokat.uz/upload/resize_cache/iblock/faf/640_480_1/k4esqh0x09mbfjo11sz5qcukxnn5b24o.jpg"
+                        alt="Card Image"
+                      />
+                    </a>
+                  </div>
+                  <div class="filter-card__wrapper">
+                    <div class="filter-card__title-wrapper">
+                      <div class="filter-card__title">Mercedes-Benz G-Class 2023 за 145 500 USD
+                      </div>
+                      <div class="filter-card__subtitle">Число идентичных автомобилей: <span class="count">22</span>
+                      </div>
+                    </div>
+                    <div class="filter-card__info-wrapper desktop">
+                      <ul class="filter-card__info">
+                        <li class="filter-card__info-item">
+                          <span class="name">VIN</span>
+                          <span class="dots"
+                            >.............................................</span
+                          >
+                          <span class="value">XUFSK**J2F3***200</span>
+                        </li>
+                        <li class="filter-card__info-item">
+                          <span class="name">Комплектация</span>
+                          <span class="dots"
+                            >.............................................</span
+                          >
+                          <span class="value">LTZ</span>
+                        </li>
+                        <li class="filter-card__info-item">
+                          <span class="name">Двигатель</span>
+                          <span class="dots"
+                            >.............................................</span
+                          >
+                          <span class="value">6,2P 408 AT6 4WD</span>
+                        </li>
+                        <li class="filter-card__info-item">
+                          <span class="name">Цвет</span>
+                          <span class="dots"
+                            >................................................................................................................</span
+                          >
+                          <div class="color">
+                            <span class="value" style="background-color: #D9D9D9;"></span>
+                            <span class="value" style="background-color: #BA2D00;"></span>
+                            <span class="value" style="background-color: #ffffff;"></span>
+                            <span class="value" style="background-color: #BDC04D;"></span>
+                            <span class="value" style="background-color: #101010;"></span>
+                          </div>
+                        </li>
+                        <li class="filter-card__info-item">
+                          <span class="name">Статус</span>
+                          <span class="dots"
+                            >.............................................</span
+                          >
+                          <span class="value">в наличии, в поставке</span>
+                        </li>
+                      </ul>
+                      <ul class="filter-card__equipment">
+                        <li class="filter-card__equipment-item">Литые диски</li>
+                        <li class="filter-card__equipment-item">
+                          Диаметр диска 20"
+                        </li>
+                        <li class="filter-card__equipment-item">
+                          Руль с отделкой кожей
+                        </li>
+                        <li class="filter-card__equipment-item">
+                          Розетка 220V
+                        </li>
+                        <li class="filter-card__equipment-item">
+                          Фронтальная подушка
+                        </li>
+                        <li class="filter-card__equipment-item">
+                          безопасности водителя
+                        </li>
+                        <li class="filter-card__equipment-item">
+                          Фронтальная подушка
+                        </li>
+                        <li class="filter-card__equipment-item">
+                          Литое запасное колесо
+                        </li>
+                        <li class="filter-card__equipment-item">
+                          Аудиосистема премиум
+                        </li>
+                        <li class="filter-card__equipment-item">
+                          Экран (диагональ): 8”
+                        </li>
+                        <li class="filter-card__equipment-item">
+                          Подушки безопасности занавесочного типа
+                        </li>
+                        <li class="filter-card__equipment-item">
+                          Функция Bluetooth
+                        </li>
+                        <li class="filter-card__equipment-item link">
+                          <a href="#">Вся комплектация</a>
+                        </li>
+                      </ul>
+                      <div class="filter-card__details">
+                        <ul class="filter-card__details-info">
+                          <li class="filter-card__details-info-item">
+                            <span class="name">Город:</span>
+                            <span class="value">Ташкент</span>
+                          </li>
+                          <li class="filter-card__details-info-item">
+                            <span class="name">Продавец:</span>
+                            <span class="value">официальный дилер</span>
+                          </li>
+                          <li class="filter-card__details-info-item">
+                            <span class="name">В продаже с 
+                            </span>
+                            <span class="value">26 июля 2023г</span>
+                          </li>
+                        </ul>
+                        <ul class="filter-card__details-list">
+                          <li class="filter-card__details-item">
+                            <span class="name">Просмотров всего</span>
+                            <span class="dots">......................................................</span>
+                            <span class="name">100</span>
+                          </li>
+                          <li class="filter-card__details-item">
+                            <span class="name">Просмотров сегодня</span>
+                            <span class="dots">......................................................</span>
+                            <span class="name">10</span>
+                          </li>
+                          <li class="filter-card__details-item">
+                            <span class="name">В избранном всего</span>
+                            <span class="dots">......................................................</span>
+                            <span class="name">12</span>
+                          </li>
+                          <li class="filter-card__details-item">
+                            <span class="name">В избранном сегодня</span>
+                            <span class="dots">......................................................</span>
+                            <span class="name">1</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-card__info-wrapper mobile">
+                <ul class="filter-card__info">
+                  <li class="filter-card__info-item">
+                    <span class="name">VIN</span>
+                    <span class="dots"
+                      >.............................................</span
+                    >
+                    <span class="value">XUFSK**J2F3***200</span>
+                  </li>
+                  <li class="filter-card__info-item">
+                    <span class="name">Комплектация</span>
+                    <span class="dots"
+                      >.............................................</span
+                    >
+                    <span class="value">LTZ</span>
+                  </li>
+                  <li class="filter-card__info-item">
+                    <span class="name">Двигатель</span>
+                    <span class="dots"
+                      >.............................................</span
+                    >
+                    <span class="value">6,2P 408 AT6 4WD</span>
+                  </li>
+                  <li class="filter-card__info-item">
+                    <span class="name">Цвет</span>
+                    <span class="dots"
+                      >.............................................</span
+                    >
+                    <div class="color">
+                      <span class="value" style="background-color: #D9D9D9;"></span>
+                      <span class="value" style="background-color: #BA2D00;"></span>
+                      <span class="value" style="background-color: #ffffff;"></span>
+                      <span class="value" style="background-color: #BDC04D;"></span>
+                      <span class="value" style="background-color: #101010;"></span>
+                    </div>
+                  </li>
+                  <li class="filter-card__info-item">
+                    <span class="name">Статус</span>
+                    <span class="dots"
+                      >.............................................</span
+                    >
+                    <span class="value">в наличии, в поставке</span>
+                  </li>
+                </ul>
+                <ul class="filter-card__equipment">
+                  <li class="filter-card__equipment-item">Литые диски</li>
+                  <li class="filter-card__equipment-item">
+                    Диаметр диска 20"
+                  </li>
+                  <li class="filter-card__equipment-item">
+                    Руль с отделкой кожей
+                  </li>
+                  <li class="filter-card__equipment-item">
+                    Розетка 220V
+                  </li>
+                  <li class="filter-card__equipment-item">
+                    Фронтальная подушка
+                  </li>
+                  <li class="filter-card__equipment-item">
+                    безопасности водителя
+                  </li>
+                  <li class="filter-card__equipment-item">
+                    Фронтальная подушка
+                  </li>
+                  <li class="filter-card__equipment-item">
+                    Литое запасное колесо
+                  </li>
+                  <li class="filter-card__equipment-item">
+                    Аудиосистема премиум
+                  </li>
+                  <li class="filter-card__equipment-item">
+                    Экран (диагональ): 8”
+                  </li>
+                  <li class="filter-card__equipment-item">
+                    Подушки безопасности занавесочного типа
+                  </li>
+                  <li class="filter-card__equipment-item">
+                    Функция Bluetooth
+                  </li>
+                  <li class="filter-card__equipment-item link">
+                    <a href="#">Вся комплектация</a>
+                  </li>
+                </ul>
+                <div class="filter-card__details">
+                  <ul class="filter-card__details-info">
+                    <li class="filter-card__details-info-item">
+                      <span class="name">Город:</span>
+                      <span class="value">Ташкент</span>
+                    </li>
+                    <li class="filter-card__details-info-item">
+                      <span class="name">Продавец:</span>
+                      <span class="value">официальный дилер</span>
+                    </li>
+                    <li class="filter-card__details-info-item">
+                      <span class="name">В продаже с 
+                      </span>
+                      <span class="value">26 июля 2023г</span>
+                    </li>
+                  </ul>
+                  <ul class="filter-card__details-list">
+                    <li class="filter-card__details-item">
+                      <span class="name">Просмотров всего</span>
+                      <span class="dots">......................................................</span>
+                      <span class="name">100</span>
+                    </li>
+                    <li class="filter-card__details-item">
+                      <span class="name">Просмотров сегодня</span>
+                      <span class="dots">......................................................</span>
+                      <span class="name">10</span>
+                    </li>
+                    <li class="filter-card__details-item">
+                      <span class="name">В избранном всего</span>
+                      <span class="dots">......................................................</span>
+                      <span class="name">12</span>
+                    </li>
+                    <li class="filter-card__details-item">
+                      <span class="name">В избранном сегодня</span>
+                      <span class="dots">......................................................</span>
+                      <span class="name">1</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div id="form" class="popup popup-forms">
+      <div class="popup__wrapper">
+        <div class="popup__content">
+          <div class="popup__title-wrapper">
+            <h4 class="popup__title">Оставьте Ваши данные</h4>
+            <button data-close class="popup__close close"></button>
+          </div>
+          <div class="popup__content-wrapper">
+            <form class="popup__form popup-form">
+              <div class="popup-form__input">
+                <input
+                  class="default-input"
+                  type="text"
+                  placeholder="Введите ваше имя"
+                />
+              </div>
+              <div class="popup-form__input">
+                <input
+                  class="default-input"
+                  type="email"
+                  placeholder="Введите ваш e-mail"
+                />
+              </div>
+              <div class="popup-form__input">
+                <input
+                  class="default-input"
+                  type="tel"
+                  placeholder="Введите ваш телефон"
+                />
+              </div>
+              <div id="customSelect" class="custom-select"></div>
+              <div class="popup-form__input">
+                <textarea
+                  class="default-area"
+                  placeholder="Сообщение"
+                ></textarea>
+              </div>
+              <div class="popup-form__buttons">
+                <button class="popup-form__send main-btn">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="video" class="popup popup-video">
+      <div class="popup__wrapper">
+        <div class="popup__content">
+          <div class="popup__title-wrapper">
+            <button data-close class="popup__close close"></button>
+          </div>
+          <div class="popup__content-wrapper">
+            <div data-youtube-place class="popup__video"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
